@@ -1,0 +1,105 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #1f1f1f;   
+    line-height: 1.75;     
+}
+
+header {
+    width: 100%;
+    background-color: #3575db;
+    display: flex;    
+    flex-direction: column;
+    align-items: center; 
+    box-shadow: 0 0px 2px #1f1f1f;        
+    margin-bottom: 3px;
+}
+
+body {
+    background-color: #FAF9F6;
+}
+
+main {    
+    width: 50%;
+    margin: 0 auto;  
+    background-color: white; 
+    padding: 25px; 
+}
+
+p, input, select, fieldset, textarea, button {
+    margin-bottom: 20px;
+}
+
+footer {
+    width: 100%;
+    background-color: #3575db;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: center;    
+    box-shadow: 0 0px 2px #1f1f1f; 
+}
+
+h1 {
+    padding: 10px;
+    font-size: 38px;
+}
+
+fieldset {
+    padding: 10px;
+    display: flex;    
+    justify-content: center;
+    align-items: center;
+}
+
+label {
+    font-weight: 800;
+    padding-right: 10px;
+}
+
+legend {
+    font-weight: 800;
+}
+
+textarea {
+    width: 80%;
+}
+
+button {
+    padding: 2px 20px;
+}
+
+.villains {
+    color: white;
+}
+
+.block-input {    
+    padding-left: 25px;    
+}
+
+.label-radio {
+    font-weight: 500;
+}
+
+.input-checkbox {    
+    margin-bottom: 0;    
+}
+
+.label-checkbox {
+    font-weight: 500;
+    padding: 15px 25px 15px 15px;
+}
+
+.footer {
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+}
+
+#comments-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+

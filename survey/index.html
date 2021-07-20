@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" href="styles/styles.css">
         <title>Superhero Application Form</title>
     </head>
 
     <body>
         <header>
             <h1 id="title">Superhero Application!</h1>
-            <p>Villains need NOT apply</p>
+            <p class="villains">Villains need <strong>NOT</strong> apply</p>
         </header>
         <main>            
             <p id="description">Attention Superhero!  Please fill out the form below to get your Superhero License!  Anyone that does not complete the form and get their license 
-                will not be invited to our annual Christmas Party!  The SLC (Superhero Licensing Committee) thanks you for compliance.</p>
+                will not be invited to our annual Christmas Party!  The SLC (Superhero Licensing Committee) thanks you for your compliance.</p>
             <div id="form-container">
                 <form id="survey-form">
                     <label for="name" id="name-label">Name: </label>
@@ -20,7 +21,7 @@
                     <input type="email" id="email" required type="email" placeholder="Secret Superhero E-mail"><br>
                     <label for="number" id="number-label">Number of Sidekicks: </label>
                     <input type="number" id="number" required type="number" min="0" max="100" placeholder="0"><br>
-                    <label for="dropdown" id="dropdown-label">Select Primary Superpower</label>
+                    <label for="dropdown" id="dropdown-label">Select Primary Superpower: </label>
                     <select id="dropdown">
                         <option value="Flight">Flight</option>
                         <option value="Invisibility">Invisibility</option>
@@ -34,35 +35,49 @@
                         <option value="bug">Bitten by an insect</option>                        
                     </select><br>
 
-                    <p>Select Your Superhero Color:</p>
-                    <input type="radio" name="color" value="color-red" id="color-red">
-                    <label for="color-red">Red</label>
-                    <input type="radio" name="color" value="color-blue" id="color-blue">
-                    <label for="color-blue">Blue</label>
-                    <input type="radio" name="color" value="color-white" id="color-white">
-                    <label for="color-white">White</label>
-                    <input type="radio" name="color" value="color-green" id="color-green">
-                    <label for="color-green">Green</label>
-                    <input type="radio" name="color" value="color-pink" id="color-pink">
-                    <label for="color-pink">Pink</label>
-                    <input type="radio" name="color" value="color-orange" id="color-orange">
-                    <label for="color-orange">Orange</label>
-                    <input type="radio" name="color" value="color-purple" id="color-purple">
-                    <label for="color-purple">Purple</label>
+                    <p><strong>Select Your Superhero Color:</strong></p>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-red" id="color-red">
+                        <label for="color-red" class="label-radio">Red</label>
+                    </div>    
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-blue" id="color-blue">
+                        <label for="color-blue" class="label-radio">Blue</label>
+                    </div>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-white" id="color-white">
+                        <label for="color-white" class="label-radio">White</label>
+                    </div>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-green" id="color-green">
+                        <label for="color-green" class="label-radio">Green</label>
+                    </div>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-pink" id="color-pink">
+                        <label for="color-pink" class="label-radio">Pink</label>
+                    </div>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-orange" id="color-orange">
+                        <label for="color-orange" class="label-radio">Orange</label>
+                    </div>
+                    <div class="block-input">
+                        <input type="radio" name="color" value="color-purple" id="color-purple">
+                        <label for="color-purple" class="label-radio">Purple</label>
+                    </div>
                     <fieldset>
                         <legend>Select Your Weapon Types:</legend>
-                        <input type="checkbox" id="swords" name="weapons" value="swords">
-                        <label for="swords">Swords</label>                        
-                        <input type="checkbox" id="guns" name="weapons" value="guns">
-                        <label for="guns">Guns</label> 
-                        <input type="checkbox" id="tanks" name="weapons" value="tanks">
-                        <label for="tanks">Armored Vehicles</label>                 
-                        <input type="checkbox" id="lasers" name="weapons" value="lasers">
-                        <label for="lasers">Lasers</label>    
-                        <input type="checkbox" id="web-slinger" name="weapons" value="web-slinger">
-                        <label for="web-slinger">Web Slinger</label>  
-                        <input type="checkbox" id="money" name="weapons" value="money">
-                        <label for="money">Money</label>                      
+                        <input type="checkbox" class="input-checkbox" id="swords" name="weapons" value="swords">
+                        <label for="swords" class="label-checkbox">Swords</label>                        
+                        <input type="checkbox" class="input-checkbox" id="guns" name="weapons" value="guns">
+                        <label for="guns" class="label-checkbox">Guns</label> 
+                        <input type="checkbox" class="input-checkbox" id="tanks" name="weapons" value="tanks">
+                        <label for="tanks" class="label-checkbox">Armored Vehicles</label>                 
+                        <input type="checkbox" class="input-checkbox" id="lasers" name="weapons" value="lasers">
+                        <label for="lasers" class="label-checkbox">Lasers</label>    
+                        <input type="checkbox" class="input-checkbox" id="web-slinger" name="weapons" value="web-slinger">
+                        <label for="web-slinger" class="label-checkbox">Web Slinger</label>  
+                        <input type="checkbox" class="input-checkbox" id="money" name="weapons" value="money">
+                        <label for="money" class="label-checkbox">Money</label>                      
                     </fieldset>
                     <label for="comments" id="comments-label">Comments</label>
                     <textarea id="comments" placeholder="Please provide any additional comments about how great you are."></textarea><br>
@@ -70,6 +85,9 @@
                 </form>
             </div>
         </main>
+        <footer>
+            <p class="footer">Created by Nathan for FreeCodeCamp's survey project.</p>
+        </footer>
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js" type="text/javascript"></script>
     </body>
 </html>
