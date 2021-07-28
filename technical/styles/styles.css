@@ -44,6 +44,15 @@ code {
     font-size: 10px;            
 }
 
+section > ul {
+    padding-left: 40px;
+}
+
+section > ul > li {
+    font-size: 14px;
+    margin-bottom: 0.5em;
+}
+
 .nav-link {
     display: block;
     padding: 10px;
