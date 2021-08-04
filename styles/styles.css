@@ -3,3 +3,63 @@
     margin: 0;    
     font-size: 16px;
 }
+
+nav {
+    position: fixed;
+    background-color: #68ab28; 
+    display: flex;
+    width: 100%;
+    flex-direction: row;          
+    justify-content: space-between;        
+    align-items: center;
+    padding: 5px;
+}
+
+nav > ul {
+    display: flex;    
+    list-style: none;  
+    margin-right: 10px;      
+}
+
+nav > ul > li {
+    border: 1px solid black;    
+    border-radius: 8px;
+    width: 150px;    
+    height: 40px;
+    margin-right: 10px;
+
+}
+
+body {
+    background-color: #2868ab;
+}
+
+h1 {
+    font-size: 48px;
+}
+
+.nav-link {
+    height: 100%;
+    width: 100%;
+    text-decoration: none;    
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+       
+}
+
+.project-tile {
+    border: 1px solid black;
+}
+
+#projects {
+    display: flex;
+    flex-direction: column;
+}
+#welcome-section {
+    height: 100vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
